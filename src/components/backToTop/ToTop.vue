@@ -3,7 +3,7 @@
  * @Motto: 求知若渴,虚心若愚
  * @Github: https://github.com/Geek-James/ddBuy
  * @掘金: https://juejin.im/user/5c4ebc72e51d4511dc7306ce
- * @LastEditTime: 2019-12-06 17:07:57
+ * @LastEditTime : 2020-01-04 15:32:21
  * @Description: 回到顶部组件
  * @FilePath: /ddBuy/src/components/backToTop/ToTop.vue
  -->
@@ -12,8 +12,7 @@
        v-show="showTop"
        @click="toTop">
     <svg-icon iconClass="backtotop"
-              style="width:2.5rem;height:2.5rem"></svg-icon>
-
+              class="backtotop" />
   </div>
 </template>
 <script>
@@ -67,6 +66,10 @@ export default {
 }
 </script>
 <style scoped>
+.backtotop {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .scrollTop {
   right: 0;
   position: fixed;
